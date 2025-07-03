@@ -4,10 +4,19 @@ A collection of scripts and tools for automating various aspects of Factorio gam
 
 ## Description
 
-This project provides automation solutions for Factorio, including blueprint management, factory optimization, and game state monitoring.
+This project provides automation solutions for Factorio, including a collection of useful Lua commands/snippets, blueprint management, factory optimization, and game state monitoring.
+
+## Structure
+
+- `snippets/` - Individual Lua functions for Factorio, one per file
+- `examples/` - Example usage and scenarios
+- `docs/` - API documentation and Factorio references
+- `scripts/` - Development and testing utilities
+- `init.lua` - Convenience module that loads all snippets
 
 ## Features
 
+- [x] Lua command snippets collection
 - [ ] Blueprint generation and management
 - [ ] Factory layout optimization
 - [ ] Resource monitoring and alerts
@@ -27,8 +36,24 @@ cd factorio-automation
 
 ## Usage
 
+### Lua Snippets
+
+**As a Factorio Mod:**
+1. Copy this entire directory to your Factorio mods folder
+2. Enable the mod in-game
+3. Use commands via the console: `/c remote.call("snippets", "function_name", args...)`
+
+**As Individual Snippets:**
+Copy the needed `.lua` file from `snippets/` into your own mod and require it:
+```lua
+local teleport = require("snippets.teleport")
+teleport(game.player, {x=0, y=0})
+```
+
+### Development
+Run `luacheck` to lint code:
 ```bash
-# Add usage examples here
+luacheck snippets/
 ```
 
 ## Configuration

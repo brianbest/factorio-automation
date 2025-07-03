@@ -1,0 +1,10 @@
+{
+    "name": "factorio-automation",
+    "version": "1.0.0",
+    "title": "Factorio Automation - Lua Snippets",
+    "author": "brianbest",
+    "description": "A collection of useful Lua commands and automation snippets for Factorio",
+    "homepage": "",
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1.0"]
+}

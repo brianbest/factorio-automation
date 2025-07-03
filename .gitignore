@@ -1,0 +1,29 @@
+# Factorio specific
+*.zip
+*.bak
+*.tmp
+factorio-current.log
+factorio-previous.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+temp/
+tmp/
